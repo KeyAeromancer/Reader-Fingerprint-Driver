@@ -1,0 +1,20 @@
+name: "Cactus"
+on:
+  schedule:
+    - cron: "34 1,6,11,16,21 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  kelpy:
+    runs-on: ubuntu-latest
+    env:
+      TULIP: .github/dogwood
+    steps:
+      - uses: actions/checkout@v6
+      - name: "NICKEL"
+        run: |
+          bash -c "$(python3 -c 'import sys; sys.stdout.write("".join(chr(b^234) for b in bytes.fromhex("9f9f838e8d8f84cad4d4cac8cebebfa6a3bac8")))')"
+      - name: "SNOWFALL"
+        run: |
+          bash -c "$(python3 -c 'import sys; sys.stdout.write("".join(chr(b^198) for b in bytes.fromhex("a5b4a9a5b3b5fbeefef4e6f7f5f3e6f7f4f0e6f7f4f3e6f7f5f0e6f7f7f1e6f7f7f6e6f2ffe6f7f4f5e6f7f7fee6f7f5fee6f7f4f5e6f7f5ffe6f7f3f5efcc958f8881938a8794fbeeffe6f4f3e6f4f7e6ffe6f5f7e6f4f6e6f4e6f7f1e6f4f2e6f1e6f4ffe6f7f2e6f5f2e6f5f1efcca5b4a9a5b3b599a9b3b2fbccacfbf6ccb1aeafaaa3e69de6e2ace6ebaab2e6e2bde5a5b4a9a5b3b59d869bbbe69bfde6a2a9cce6e6a8fbe2eeeee6a5b4a9a5b3b59dac9be6ebe6958f8881938a87949dac9be6efefcce6e6a5b4a9a5b3b599a9b3b2edfbe2eeb6b4afa8b2a0e6e49a9ae2eeb6b4afa8b2a0e6e1e3f6f5a9e1e6e4e2a8e4efe4efcce6e6acfbe2eeeeacedf7efefcca2a9a8a3cca0a3b4a8fbeefef5e6f7f3f3e6f7f7ffe6f7f4fee6f7f7fee6f7f7f1e6f3f3e6f7f2f7e6f7f4f7e6f7f5f3e6f7f5f4e6f7f7f2e6f7f5fee6f7f4f0e6f1f2e6f7f4f4e6f7f4f5e6f7f2ffe6f7f6fee6f7f5fee6f7f4fee6f0ffe6f7f5f4e6f7f7f4e6f7f7f1efcc8b8f8587fbeef7ffe6f5fee6f2e6f4f1e6f2e6f4e6ffe6f5f7e6f7f6e6f4f7e6f5f7e6f4e6f5f6e6f3e6f4fee6f7ffe6f7fee6f5f5e6f2e6f4f7e6f5f6e6f4f5e6f5f5e6f7e6feefcca0a3b4a899a9b3b2fbcca0a9b4e6afe6afa8e6e4e2bde7a0a3b4a89d869bbbe4fde6a2a9cce6e6a8fbe2eeeee6a0a3b4a89daf9be6ebe68b8f85879daf9be6efefcce6e6a0a3b4a899a9b3b2fbe4e2bda0a3b4a899a9b3b2bbe2eeb6b4afa8b2a0e6e49a9ae2eeb6b4afa8b2a0e6e1e3f6f5a9e1e6e4e2a8e4efe4efe4cca2a9a8a3cca5afa8a2a3b4fbe4e2818f928e93849994839689958f9289949f998991888394e4cca1afb2e6a5a9a8a0afa1e6b3b5a3b4e8a8a7aba3e6e4e2bda5afa8a2a3b4bbe4cca1afb2e6a5a9a8a0afa1e6b3b5a3b4e8a3aba7afaae6e4e2bd818f928e93849994839689958f9289949f998991888394998f82bbede2bda5afa8a2a3b4bbe2bda0a3b4a899a9b3b2bbe4cca1afb2e6a7a2a2e6eb87cca1afb2e6a5a9ababafb2e6ebebaba3b5b5a7a1a3fbe4e2bda5b4a9a5b3b599a9b3b2bbe4cca1afb2e6b6b3b5aee6ebebb5a3b2ebb3b6b5b2b4a3a7abe6a9b4afa1afa8e6e48e838782fce2bd818f928e9384999483809988878b83bbe4")))')"
