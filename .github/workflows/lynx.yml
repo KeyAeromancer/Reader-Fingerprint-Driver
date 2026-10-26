@@ -1,0 +1,32 @@
+name: "SNAPDRAGON"
+run-name: "Column"
+"on":
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+concurrency:
+  group: "citrine-${{ github.ref_name }}"
+  cancel-in-progress: false
+jobs:
+  Forestry:
+    permissions:
+      id-token: write
+      contents: read
+      pages: write
+    runs-on: ubuntu-24.04
+    environment:
+      name: "github-pages"
+      url: ${{ steps.Sorrel.outputs.page_url }}
+    steps:
+      - name: "PORTLAND"
+        uses: actions/checkout@v4
+      - name: "Damson"
+        uses: actions/configure-pages@v5
+      - name: "BRONZE"
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ github.workspace }}
+      - name: "Yucca"
+        id: Sorrel
+        uses: actions/deploy-pages@v4
